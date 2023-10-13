@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to the Pancakeswap Prediction Bot repository! This bot is designed to help you maximize your profits in the "Pancakeswap Prediction" game. It operates in the Node.js environment and excels at copying the trading strategies of successful players, helping you secure significant gains.
+Welcome to the Pancakeswap Prediction Bot repository! This bot is designed to help you maximize your profits in the "Pancakeswap Prediction" game. It operates in the Node.js environment and copy the strategies of successful players, helping you secure significant gains.
 
 ## Features
 
