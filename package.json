@@ -1,0 +1,24 @@
+{
+  "name": "PancakeSwap-Prediction-Bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ethersproject/providers": "^5.5.3",
+    "dotenv": "^16.3.1",
+    "easy-wallet": "^1.1.0",
+    "ethers": "^5.5.4",
+    "request": "^2.88.2",
+    "web3": "^1.3.6"
+  }
+}
