@@ -103,8 +103,8 @@ var getBet = () => {
 
 var registerLoss = (amount) => {
 	martingale.push(amount*martingaleFactor);
-	console.log('LOSS');
-	console.log(martingale);
+	//console.log('LOSS');
+	//console.log(martingale);
 }
 
 var registerReversion = () => {
@@ -419,7 +419,7 @@ let StartRound = async (epoch) => {
 }
 
 const providerConnect = () => {
-	console.log(rpcArr);
+	//console.log(rpcArr);
 	
 	for(var i in rpcArr){
 		var pos = provider.length;
