@@ -43,9 +43,9 @@ const getCurrentTimestamp = () => {
 }
 
 // your investiment
-const initialBetAmount = process.env.BET_AMOUNT;
-const martingaleFactor = process.env.MARTINGALE_MULTIPLIER;
-const secondsToBet = process.env.TIME_TO_BET;
+const initialBetAmount = parseFloat(process.env.BET_AMOUNT);
+const martingaleFactor = parseInt(process.env.MARTINGALE_MULTIPLIER);
+const secondsToBet = parseInt(process.env.TIME_TO_BET);
 var betAmount = 0;
 
 // load
@@ -100,8 +100,6 @@ var getBet = () => {
 	martingale.splice(pos, 1);
 	return max;	
 }
-
-console.log(getBet());
 
 var registerLoss = (amount) => {
 	martingale.push(amount*martingaleFactor);
