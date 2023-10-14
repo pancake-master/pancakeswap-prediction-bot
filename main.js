@@ -534,8 +534,8 @@ let sortByRate = () => {
 }
 
 const fetchRoundData = async (epoch) => {	
-	console.log('#EPOCH (' + epoch + ') COUNT TEST ' + bearCount + ' BEAR/ ' + bullCount + ' BULL')
-	console.log('#EPOCH (' + epoch + ') AMOUNT TEST ' + bearAmount + ' BNB BEAR/ ' + bullAmount + ' BNB BULL')
+	console.log('#EPOCH (' + epoch + ') QUALIFIED PLAYERS COUNT ' + bearCount + ' BEAR/ ' + bullCount + ' BULL')
+	console.log('#EPOCH (' + epoch + ') QUALIFIED PLAYERS AMOUNT ' + bearAmount + ' BNB BEAR/ ' + bullAmount + ' BNB BULL')
 	
 	if(bearCount == 0 && bullCount == 0)
 		return;
