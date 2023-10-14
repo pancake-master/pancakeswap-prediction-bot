@@ -547,7 +547,7 @@ const fetchRoundData = async (epoch) => {
 	totalValidTips = totalValidTips + bearCount + bullCount;
 	
 	if(
-		(bearCount > 1 && bearCount > bullCount && bearAmount > bullAmount)
+		(bearCount > bullCount && bearAmount > bullAmount)
 	){
 		var b = getBet();
 		
@@ -570,7 +570,7 @@ const fetchRoundData = async (epoch) => {
 	} 
 
 	if(
-		(bullCount > 1 && bullCount > bearCount && bullAmount > bearAmount)
+		(bullCount > bearCount && bullAmount > bearAmount)
 	){
 		var b = getBet();
 		
