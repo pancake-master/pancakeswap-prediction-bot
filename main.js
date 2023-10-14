@@ -103,8 +103,6 @@ var getBet = () => {
 
 var registerLoss = (amount) => {
 	martingale.push(amount*martingaleFactor);
-	//console.log('LOSS');
-	//console.log(martingale);
 }
 
 var registerReversion = () => {
@@ -213,11 +211,9 @@ let init = async () => {
 init();
 
 let BetBear = async (sender, epoch, amount) => {
-	console.log('BetBear: ' + sender + ', ' + epoch + ', ' + amount);
+	//console.log('BetBear: ' + sender + ', ' + epoch + ', ' + amount);
 	
 	if(wallets[sender] != null && wallets[sender][epoch] != null){
-		//console.log('-> TIP: SENDER ALREADY REGISTERED FOR #' + epoch);
-		//console.log(wallets[sender][epoch]);
 		return;
 	}
 	
@@ -241,7 +237,7 @@ let BetBear = async (sender, epoch, amount) => {
 }
 
 let BetBull = async (sender, epoch, amount) => {
-	console.log('BetBull: ' + sender + ', ' + epoch + ', ' + amount);
+	//console.log('BetBull: ' + sender + ', ' + epoch + ', ' + amount);
 	
 	if(wallets[sender] != null && wallets[sender][epoch] != null){
 		return;
@@ -629,14 +625,14 @@ const bull = (epoch, amount) => {
 			});
 
 			sentTx.on("error", err => {
-				console.log("1" + err);	
+				console.log("Error placing bet: " + err);
 				
 				delete bets[epoch];
 				registerReversion();
 			});
 		  
 		}).catch((err) => {		
-			console.log("2" + err);
+			console.log("Error placing bet: " + err);
 
 			delete bets[epoch];
 			registerReversion();
@@ -681,14 +677,14 @@ const bear = (epoch, amount) => {
 			});
 
 			sentTx.on("error", err => {
-				console.log("1" + err);	
+				console.log("Error placing bet: " + err);
 				
 				delete bets[epoch];
 				registerReversion();
 			});
 		  
 		}).catch((err) => {			
-			console.log("2" + err);	
+			console.log("Error placing bet: " + err);
 
 			delete bets[epoch];
 			registerReversion();
@@ -733,11 +729,11 @@ const claim = async (epoch) => {
 			});
 
 			sentTx.on("error", err => {
-				console.log("1" + err);	
+				console.log("Error claiming award: " + err);
 			});
 		  
 		}).catch((err) => {		  
-			console.log("2" + err);		  
+			console.log("Error claiming award: " + err);
 		});			
 	}
 }
