@@ -6,7 +6,7 @@ This bot was designed to help you maximize my profits in the "Pancakeswap Predic
 
 ## Features
 
-- **Performance Tracking:** Our bot continuously monitors the performance of top traders in the Pancakeswap Prediction game and emulates their winning strategies.
+- **Performance Tracking:** My bot continuously monitors the performance of top traders in the Pancakeswap Prediction game and emulates their winning strategies.
 
 - **Automated Trading:** The bot handles trading tasks on your behalf, executing orders and managing your portfolio according to the strategies it mimics.
 
@@ -30,7 +30,7 @@ Follow these steps to start using the Pancakeswap Prediction Bot:
 
 The `.env` file contains the configuration settings for the bot. Here's what each setting means:
 
-- `PRIVATE_KEY`: Your cryptocurrency wallet's private key. Learn how to obtain your private key from [this YouTube tutorial](https://www.youtube.com/watch?v=AM2iob1pNiU).
+- `PRIVATE_KEY`: Your wallet's private key. Learn how to obtain your private key from [this YouTube tutorial](https://www.youtube.com/watch?v=AM2iob1pNiU).
 
 - `DEMO_MODE`: Set to `1` if you want the bot to run in demo mode, and `0` to run in live mode.
 
