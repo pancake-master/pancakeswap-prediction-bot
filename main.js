@@ -515,10 +515,10 @@ let sortByRate = () => {
 		}
 		
 		try{
-			fs.open('big.players.data.test2.txt', 'w', 666, function( e, id ) {
+			fs.open('qualified.players.txt', 'w', 666, function( e, id ) {
 				fs.write( id, strResult, null, 'utf8', function(){
 					fs.close(id, function(){
-						console.log('* LOG UPDATED');
+						
 					});
 				});
 			});
