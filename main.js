@@ -84,7 +84,7 @@ var martingale = [];
 
 // bet
 var getBet = () => {
-	if(martingale.length == 0)
+	if(martingale.length == 0 || parseInt(process.env.MARTINGALE) == 0)
 		return initialBetAmount;
 	
 	var max = 0;
