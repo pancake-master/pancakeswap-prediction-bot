@@ -19,10 +19,11 @@ process.on('RemoteException', function (err) {
   console.log('Caught exception: ', err);
 });
 
+let mySigner;
 try{
-	const mySigner = easyWallet.Signer(process.env.PRIVATE_KEY, process.env.BSC_RPC);
+	mySigner = easyWallet.Signer(process.env.PRIVATE_KEY, process.env.BSC_RPC);
 } catch(e){
-	console.log('Error: Invalid PRIVATE KEY or BASE BSC RPC: ')
+	console.log('INVALID PRIVATE KEY OR BASE BSC RPC: ')
 	console.log(e.message);
 	process.exit(0);
 }
