@@ -63,5 +63,4 @@ You're welcome to contribute to this project by forking the repository, making i
 ## License
 
 This project is licensed under the [MIT License](LICENSE.md).
-
 Happy trading, and may your profits soar with the Pancakeswap Prediction Bot!
